@@ -2,7 +2,11 @@
 
 pragma solidity ^0.8.18;
 
+
 contract BoxV2{
+
+    uint256 internal otherNumber;
+
     uint256 internal number;
 
     function setNumber(uint256 _number) external{
@@ -16,4 +20,6 @@ contract BoxV2{
     function version() external pure returns(uint256){
         return 2;
     }
+
+    
 }
